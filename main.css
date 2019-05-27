@@ -22,26 +22,39 @@ header h1 {
   font-size: 50px;
 }
 
-header img {
-  width: 350px;
-  text-align: center;
-}
-
 .pinkBg {
   background-color: #e6ddde;
   background-color: #f7cfc3;
 }
 
-.work img {
+main img {
+  width: 60%;
+}
+
+.work img,
+.about img {
   width: 100%;
+}
+
+.about img {
+  border: solid white 16px;
+}
+
+.work img {
+  padding: 16px;
+  border: solid lightgrey 1px;
 }
 
 p {
   font-family: "Lato", sans-serif;
 }
 
-.work p {
-  text-align: left;
+.subheader {
+  font-weight: 1000;
+}
+
+.work span {
+  font-size: 40px;
 }
 
 footer {
@@ -75,9 +88,30 @@ a.btn {
   text-decoration: none;
 }
 
+/*tablet styles*/
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  main img {
+    width: 40%;
+  }
+}
+
+/*desktop styles*/
 @media screen and (min-width: 960px) {
   .container {
     width: 980px;
     margin: 0 auto;
   }
 }
+
+/*
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+*/
